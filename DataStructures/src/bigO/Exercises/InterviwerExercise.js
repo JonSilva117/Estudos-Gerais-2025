@@ -33,40 +33,36 @@ function containsCommonItemWithMap(arr1, arr2) {
 
   for (let i = 0; i < arr1.length; i++) {
     map.set(arr1[i], true);
-    }
-    
-    for (let j = 0; j < arr2.length; j++) {
-      if (map.has(arr2[j])) {
-        console.log(true);
-        return true;
-      }
-      map.set(arr2[j], true);
-    }
-    console.log(false);
-    return false;
-    // Time complexity O(a + b)  here we are iuterating two different arrays separately
   }
-  
 
-
-function containsCommonItemWithSet(arr1, arr2){
-    let set = new Set(); 
-
-    for(let i = 0; i < arr1.length; i++){
-        set.add(arr1[i]); // O(n) time complexity
+  for (let j = 0; j < arr2.length; j++) {
+    if (map.has(arr2[j])) {
+      console.log(true);
+      return true;
     }
+    map.set(arr2[j], true);
+  }
+  console.log(false);
+  return false;
+  // Time complexity O(a + b)  here we are iuterating two different arrays separately
+}
 
-    for(let j = 0; j < arr2.length; j++){
-        if(set.has(arr2[j])){ 
-            console.log(true); 
-            return true; // O(1) time complexity
-        }
+function containsCommonItemWithSet(arr1, arr2) {
+  let set = new Set();
+
+  for (let i = 0; i < arr1.length; i++) {
+    set.add(arr1[i]); // O(n) time complexity
+  }
+
+  for (let j = 0; j < arr2.length; j++) {
+    if (set.has(arr2[j])) {
+      console.log(true);
+      return true; // O(1) time complexity
     }
-    console.log(false);
-    return false;
-    // Time complexity O(a + b)  here we are iuterating two different arrays separately
-
-
+  }
+  console.log(false);
+  return false;
+  // Time complexity O(a + b)  here we are iuterating two different arrays separately
 }
 
 // containsCommonItem(array1, array2);
