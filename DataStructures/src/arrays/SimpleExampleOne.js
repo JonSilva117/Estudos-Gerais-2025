@@ -21,7 +21,7 @@ strings.unshift('z') // adds 'z' to the beginning of the array
 
 // splice - allows us to add or replace elements in the array at a specific index
 
-strings.splice(2, 0, 'alien') // adds 'alien' at index 2 without removing any elements
+strings.splice(2, 0, 'alien') // adds 'alien ' at index 2 without removing any elements
 
 console.log(strings)
 

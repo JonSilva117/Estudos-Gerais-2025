@@ -14,7 +14,7 @@ func newDeck() deck {
 
 	for _, suit := range cardsSuits {
 		for _, value := range cardsValues {
-			cards = append(cards, value+" of "+suit) // here we are appending a new card to the cards slice by concatenating the value and suit
+			cards = append(cards, value+" of "+suit) // here we are appending a new card to the cards slice, which is a string that is the value of the card followed by " of " and then the suit of the card
 		}
 	}
 	return cards
@@ -30,4 +30,4 @@ func (d deck) print() {
 }
 
 // deck seria o mesmo que uma string normal, um int, etc, mas é um tipo personalizado, e podemos adicionar métodos a ele, como o print() acima.
-// nao ha esse comportamento em outras linguagens, onde voce pode criar um tipo personalizado e adicionar metodos a ele, como em Java ou C#, por exemplo. Em Go, voce pode criar um tipo personalizado e adicionar metodos a ele, mas nao ha heranca, ou seja, voce nao pode criar um tipo que herda de outro tipo.
+// ha esse comportamento em outras linguagens, onde voce pode criar um tipo personalizado e adicionar metodos a ele, como em Java ou C#, por exemplo. Em Go, voce pode criar um tipo personalizado e adicionar metodos a ele, mas nao ha heranca, ou seja, voce nao pode criar um tipo que herda de outro tipo.
