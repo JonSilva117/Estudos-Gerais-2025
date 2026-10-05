@@ -1,4 +1,4 @@
-const strings = ['a', 'b', 'c', 'd']
+const strings = ['a', 'b', 'c', 'd'] 
 //4*4  = 16 bites of storage 
 
 strings[2] // access the third element in the array  
